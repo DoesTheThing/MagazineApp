@@ -19,8 +19,24 @@
             android:gravity="fill_horizontal">
 
             <CheckBox
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="@string/apple_product" />
+
+            <EditText android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+            <CheckBox
+                android:layout_width="0dp"
                 android:layout_column="0"
-                android:text="@string/apple_product"
+                android:text="@string/strawberry_product"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"/>
 
@@ -36,8 +52,9 @@
             android:gravity="fill_horizontal">
 
             <CheckBox
+                android:layout_width="0dp"
                 android:layout_column="0"
-                android:text="@string/apple_product"
+                android:text="@string/blueberry_product"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"/>
 
@@ -53,25 +70,9 @@
             android:gravity="fill_horizontal">
 
             <CheckBox
+                android:layout_width="0dp"
                 android:layout_column="0"
-                android:text="@string/apple_product"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"/>
-
-            <EditText android:layout_column="1"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:text="0"/>
-        </GridLayout>
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:gravity="fill_horizontal">
-
-            <CheckBox
-                android:layout_column="0"
-                android:text="@string/apple_product"
+                android:text="@string/potato_product"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"/>
 
