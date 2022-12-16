@@ -6,13 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:gravity="fill_horizontal">
+
+            <CheckBox
+                android:layout_column="0"
+                android:text="@string/apple_product"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"/>
+
+            <EditText android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:gravity="fill_horizontal">
+
+            <CheckBox
+                android:layout_column="0"
+                android:text="@string/apple_product"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"/>
+
+            <EditText android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:gravity="fill_horizontal">
+
+            <CheckBox
+                android:layout_column="0"
+                android:text="@string/apple_product"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"/>
+
+            <EditText android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:gravity="fill_horizontal">
+
+            <CheckBox
+                android:layout_column="0"
+                android:text="@string/apple_product"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"/>
+
+            <EditText android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+        </GridLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/calculate"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
