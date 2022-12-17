@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (toast.isChecked())
             {
-                int duration = Toast.LENGTH_LONG;
-                Toast result = Toast.makeText(this, return_message, duration);
+                int duration = Toast.LENGTH_SHORT;
+                Toast result = Toast.makeText(this, String.format("Total cost: %.1f", sum), duration);
                 result.show();
             }
         }
