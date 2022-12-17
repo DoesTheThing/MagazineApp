@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Magazine</string>
+    <string name="apple_product">Apple</string>
+    <string name="strawberry_product">Strawberry</string>
+    <string name="blueberry_product">Blueberry</string>
+    <string name="potato_product">Potatoes</string>
+    <string name="calculate">Calculate</string>
+    <string name="dialog_output">Dialog</string>
+    <string name="toast_output">Toast</string>
+    <string name="item_name">Name</string>
+    <string name="item_price">Price</string>
+    <string name="item_amount">Amount</string>
 </resources>

@@ -6,13 +6,187 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:gravity="fill_horizontal">
+
+            <TextView
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/item_name"/>
+
+            <TextView
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/item_price"/>
+
+            <TextView
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/item_amount"/>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:gravity="fill_horizontal">
+
+            <CheckBox
+                android:id="@+id/apple_check_box"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="@string/apple_product" />
+
+            <EditText
+                android:id="@+id/apple_price_edit_text"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+
+            <EditText
+                android:id="@+id/amount_of_apple_edit_text"
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:gravity="fill_horizontal">
+
+            <CheckBox
+                android:id="@+id/strawberry_check_box"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="@string/strawberry_product" />
+
+            <EditText
+                android:id="@+id/strawberry_price_edit_text"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+
+            <EditText
+                android:id="@+id/amount_of_strawberry_edit_text"
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:gravity="fill_horizontal">
+
+            <CheckBox
+                android:id="@+id/blueberry_check_box"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="@string/blueberry_product" />
+
+            <EditText
+                android:id="@+id/blueberry_price_edit_text"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+
+            <EditText
+                android:id="@+id/amount_of_blueberry_edit_text"
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:gravity="fill_horizontal">
+
+            <CheckBox
+                android:id="@+id/potato_check_box"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="@string/potato_product" />
+
+            <EditText
+                android:id="@+id/potato_price_edit_text"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+
+            <EditText
+                android:id="@+id/amount_of_potato_edit_text"
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+        </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="fill_horizontal"
+            android:onClick="OnCalc"
+            android:text="@string/calculate"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/dialog_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="fill_horizontal"
+                android:checked="true"
+                android:text="@string/dialog_output"/>
+            <RadioButton
+                android:id="@+id/toast_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/toast_output"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
