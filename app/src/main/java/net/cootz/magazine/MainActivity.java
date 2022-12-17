@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle("Result cost");
                 builder.setMessage(return_message);
+                builder.setIcon(R.drawable.grocery_store);
                 builder.show();
             }
             else if (toast.isChecked())
